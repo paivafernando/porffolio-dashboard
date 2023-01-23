@@ -92,13 +92,13 @@ const Login: FC = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <Box width={304} height={78}>
+          {/* <Box width={304} height={78}>
             <Reaptcha
               sitekey={REACAPTCHA_SITE_KEY}
               onVerify={updateRecaptchaToken}
               onExpire={clearRecaptchaToken}
             />
-          </Box>
+          </Box> */}
           <Button
             type="submit"
             disabled={isLoginDisabled}
