@@ -16,7 +16,7 @@ const Login: FC = () => {
   const [username, setUsername] = useState('admin')
   const [password, setPassword] = useState('admin')
   const [recaptchaToken, setRecaptchaToken] = useState('')
-  const isLoginDisabled = !username || !password || !recaptchaToken
+  const isLoginDisabled = !username || !password // || !recaptchaToken
 
   const updateRecaptchaToken = (token: string) => setRecaptchaToken(token)
   const clearRecaptchaToken = () => setRecaptchaToken('')
